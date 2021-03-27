@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: Gotham Rounded;
+}
+
+/* body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+} */
+
+.container-two {
+	width: 800px;
+	max-width: 80%;
+	background-color: white;
+}
+
+.btn-options {
+	display: grid;
+	gap: 10px;
+	margin: 20px 0;
+}
+
+.btn {
+	background-color: lightblue;
+	text-align: start;
+	border-radius: 10px 10px;
+	padding: 7px 10px;
+}
+
+.btn:hover {
+	background-color: darkblue;
+	opacity: 0.8;
+	color: white;
+}
+
+.hidden {
+	display: none;
+}

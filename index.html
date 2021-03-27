@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Code Quiz</title>
+	</head>
+	<body>
+		<header class="container">
+			<p>View high scores</p>
+			<span id="timer" class="hidden"
+				>Timer:
+				<p id="count"></p
+			></span>
+		</header>
+		<div class="container-two">
+			<div id="questions-container" class="hidden">
+				<h1 id="questions">Pregunta Numero Uno</h1>
+				<div id="answer-options" class="btn-options">
+					<button class="btn">La Respuesta Uno</button>
+					<button class="btn">La Respuesta Dos</button>
+					<button class="btn">La Respuesta Tres</button>
+					<button class="btn">La Respuesta Cuatro</button>
+				</div>
+			</div>
+
+			<p id="start-words">
+				This is a Quiz, please answer these questions as efficiently as
+				possible! Wrong answers will penalize you 10 seconds.
+			</p>
+			<button id="first-click">Start the Quiz!</button>
+		</div>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
