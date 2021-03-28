@@ -15,6 +15,16 @@
 	align-items: center;
 } */
 
+.container {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 75px 0 20px;
+}
+
+.container span {
+	justify-content: flex-end;
+}
+
 .container-two {
 	width: 800px;
 	max-width: 80%;
