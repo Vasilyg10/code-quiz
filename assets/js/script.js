@@ -14,6 +14,11 @@ let questions = [
         answers: [
             { text: "Blue", correct: true },
             { text: "Red", correct: false }
+        ],
+        question: "What color is the grass?",
+        answers: [
+            { text: "Green", correct: true },
+            { text: "Orange", correct: false }
         ]
     }
 ]
@@ -51,6 +56,7 @@ function showQuestion(question) {
         let button = document.createElement("button")
         button.innerText = answer.text
         button.classList.add("btn")
+        button.setAttribute("id", "btn")
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
@@ -60,12 +66,10 @@ function showQuestion(question) {
 }
 
 // pick an answer
-let selectAnswer = function() {
-
-}
-
-function resetQuestion() {
-    nextButton.classList.add("hidden")
+function selectAnswer() {
+    if (shuffledQuestions.length > questionIndex + 1)
+    questionIndex++;
+    nextQuestion();
 }
 
 let firstClickEl = document.getElementById("first-click");
@@ -73,5 +77,6 @@ let questionsEl = document.getElementById("questions-container");
 let startWordsEl = document.getElementById("start-words");
 let timerStartEl = document.getElementById("timer");
 let startTitleEl = document.getElementById("start-title");
+let answerClick = document.getElementById("btn");
 
 firstClickEl.addEventListener("click", startQuiz);
