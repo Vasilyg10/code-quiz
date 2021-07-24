@@ -5,10 +5,14 @@ This website is a quiz on some fundamental JavaScript questions. It is designed 
 
 ## Screenshot
 
-
+![screenshot](./assets/images/screenshot.png)
 
 ## Link to deployed website
 
+[deployed] (https://vasilyg10.github.io/code-quiz/)
+
 ## Link to Github Repo
+
+[github] (https://github.com/Vasilyg10/code-quiz)
 
 ### Created by: Vasily Giannakopoulos
